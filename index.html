@@ -3,159 +3,91 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fuego Joven | Blog Cristiano</title>
-  <meta name="description" content="Blog para jóvenes cristianos apasionados por Cristo. Fe, música, devocionales y comunidad." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <title>Jóvenes Avivados | Blog Cristiano</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
 
-  <!-- ===== HEADER ===== -->
   <header class="header">
     <div class="container header__inner">
-      <a href="#" class="logo">
+      <a href="index.html" class="logo">
         <span class="logo__icon">🔥</span>
-        <span class="logo__text">Fuego<em>Joven.</em></span>
+        <span class="logo__text">Jóvenes <em>Avivados.</em></span>
       </a>
-
       <nav class="nav" id="nav">
         <ul class="nav__list">
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#devocionales">Devocionales</a></li>
-          <li><a href="#musica">Música</a></li>
-          <li><a href="#testimonios">Testimonios</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="devocionales.html">Devocionales</a></li>
+          <li><a href="musica.html">Música</a></li>
+          <li><a href="testimonios.html">Testimonios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
-
-      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+      <button class="nav-toggle" id="navToggle" aria-label="Menú">
         <span></span><span></span><span></span>
       </button>
     </div>
   </header>
 
-  <!-- ===== HERO ===== -->
-  <section class="hero" id="inicio">
+  <section class="hero">
     <div class="hero__overlay"></div>
     <div class="container hero__content">
       <p class="hero__tag">Blog para jóvenes cristianos</p>
-      <h1 class="hero__title">Encendidos por el <span>Fuego</span> de Cristo</h1>
+      <h1 class="hero__title">Encendidos por el <span>Fuego</span> de Cristo.</h1>
       <p class="hero__subtitle">
         Un espacio para crecer en fe, compartir testimonios y vivir el evangelio con pasión.
-        Porque ser joven y cristiano no es aburrido… ¡es una aventura!
       </p>
       <div class="hero__actions">
-        <a href="#devocionales" class="btn btn--primary">Leer devocionales</a>
-        <a href="#contacto" class="btn btn--ghost">Únete a la comunidad</a>
+        <a href="devocionales.html" class="btn btn--primary">Leer devocionales</a>
+        <a href="contacto.html" class="btn btn--ghost">Únete a la comunidad</a>
       </div>
     </div>
   </section>
 
-  <!-- ===== DEVOCIONALES ===== -->
-  <section class="section" id="devocionales">
+  <section class="section">
     <div class="container">
       <div class="section__head">
-        <h2 class="section__title">Devocionales</h2>
-        <p class="section__subtitle">Palabra fresca para tu día a día</p>
+        <h2 class="section__title">Explora el blog</h2>
+        <p class="section__subtitle">Elige un apartado y sumérgete</p>
       </div>
-
-      <div class="grid grid--cards" id="devocionalesGrid">
-        <!-- Las tarjetas se cargan desde app.js -->
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== MÚSICA ===== -->
-  <section class="section section--alt" id="musica">
-    <div class="container">
-      <div class="section__head">
-        <h2 class="section__title">Música que inspira</h2>
-        <p class="section__subtitle">Playlists para adorar sin parar</p>
-      </div>
-
-      <div class="grid grid--music">
-        <article class="music-card">
-          <div class="music-card__cover" style="background-image:url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=600')"></div>
-          <div class="music-card__body">
-            <h3>Adoración profunda</h3>
-            <p>Para esos momentos de intimidad con Dios.</p>
-            <a href="#" class="link">Escuchar →</a>
+      <div class="grid grid--cards">
+        <a href="devocionales.html" class="card card--link">
+          <div class="card__img" style="background-image:url('https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=800')"></div>
+          <div class="card__body">
+            <span class="card__category">Devocionales</span>
+            <h3 class="card__title">Palabra fresca para tu día</h3>
+            <p class="card__text">Reflexiones cortas y profundas para crecer en fe.</p>
+            <span class="link">Entrar →</span>
           </div>
-        </article>
-        <article class="music-card">
-          <div class="music-card__cover" style="background-image:url('https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600')"></div>
-          <div class="music-card__body">
-            <h3>Alabanza joven</h3>
-            <p>Ritmo, energía y fe para tu semana.</p>
-            <a href="#" class="link">Escuchar →</a>
+        </a>
+        <a href="musica.html" class="card card--link">
+          <div class="card__img" style="background-image:url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=800')"></div>
+          <div class="card__body">
+            <span class="card__category">Música</span>
+            <h3 class="card__title">Playlists que inspiran</h3>
+            <p class="card__text">Adoración, alabanza y lo-fi cristiano.</p>
+            <span class="link">Entrar →</span>
           </div>
-        </article>
-        <article class="music-card">
-          <div class="music-card__cover" style="background-image:url('https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=600')"></div>
-          <div class="music-card__body">
-            <h3>Lo-fi cristiano</h3>
-            <p>Para estudiar, orar o descansar.</p>
-            <a href="#" class="link">Escuchar →</a>
+        </a>
+        <a href="testimonios.html" class="card card--link">
+          <div class="card__img" style="background-image:url('https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?w=800')"></div>
+          <div class="card__body">
+            <span class="card__category">Testimonios</span>
+            <h3 class="card__title">Vidas transformadas</h3>
+            <p class="card__text">Historias reales de jóvenes que encontraron a Cristo.</p>
+            <span class="link">Entrar →</span>
           </div>
-        </article>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- ===== TESTIMONIOS ===== -->
-  <section class="section" id="testimonios">
-    <div class="container">
-      <div class="section__head">
-        <h2 class="section__title">Testimonios</h2>
-        <p class="section__subtitle">Vidas transformadas por Su amor</p>
-      </div>
-
-      <div class="testimonials" id="testimonials">
-        <!-- Se generan desde app.js -->
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== CONTACTO ===== -->
-  <section class="section section--alt" id="contacto">
-    <div class="container contact">
-      <div class="contact__info">
-        <h2 class="section__title">Únete a la comunidad</h2>
-        <p>Recibe devocionales, novedades y contenido exclusivo cada semana.</p>
-        <ul class="contact__list">
-          <li>📧 devocionales@fuegojoven.com</li>
-          <li>📱 @fuegojoven</li>
-          <li>📍 Placetas, Cuba</li>
-        </ul>
-      </div>
-      <form class="contact__form" id="contactForm">
-        <label>
-          Nombre
-          <input type="text" name="nombre" placeholder="Tu nombre" required />
-        </label>
-        <label>
-          Email
-          <input type="email" name="email" placeholder="tucorreo@ejemplo.com" required />
-        </label>
-        <label>
-          Mensaje
-          <textarea name="mensaje" rows="4" placeholder="Cuéntanos cómo podemos orar por ti..." required></textarea>
-        </label>
-        <button type="submit" class="btn btn--primary">Enviar mensaje</button>
-        <p class="form-message" id="formMessage"></p>
-      </form>
-    </div>
-  </section>
-
-  <!-- ===== FOOTER ===== -->
   <footer class="footer">
     <div class="container footer__inner">
-      <p>© <span id="year"></span> Fuego Joven · Hecho con ❤️ y oración para la juventud cristiana.</p>
+      <p>© <span id="year"></span> Jóvenes Avivados · Hecho con ❤️ y oración.</p>
       <div class="footer__socials">
-        <a href="#">Instagram</a>
-        <a href="#">YouTube</a>
-        <a href="#">TikTok</a>
+        <a href="#">Instagram</a><a href="#">YouTube</a><a href="#">TikTok</a>
       </div>
     </div>
   </footer>
